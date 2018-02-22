@@ -56,6 +56,29 @@ int mgos_arduino_sd_read(File f, uint8_t* buffer, size_t toRead) {
 //   return sd->write(f, buffer);
 // }
 
+void mgos_sd_print_card_info(){
+  uint8_t cardType = SD.cardType();
+
+  if(cardType == CARD_NONE){
+      printf("No SD card attached\n");
+      return;
+  }
+
+  printf("SD Card Type: ");
+  if(cardType == CARD_MMC){
+      printf("MMC\n");
+  } else if(cardType == CARD_SD){
+      printf("SDSC\n");
+  } else if(cardType == CARD_SDHC){
+      printf("SDHC\n");
+  } else {
+      printf("UNKNOWN\n");
+  }
+
+  uint64_t cardSize = SD.cardSize() / (1024 * 1024);
+  printf("SD Card Size: %lluMB\n", cardSize);
+}
+
 void mgos_arduino_sd_listFiles() {
   const char * dirname="/";
   uint8_t levels = 0;
