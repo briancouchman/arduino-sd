@@ -2,6 +2,7 @@
 #include "SD.h"
 #else
 typedef struct SDtag SD;
+typedef struct Filetag File;
 #endif
 
 #ifdef __cplusplus
