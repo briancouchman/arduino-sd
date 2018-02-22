@@ -1,0 +1,31 @@
+author: Brian Couchman
+type: lib
+description: SD card reader
+version: 1.0
+platform: esp32
+
+build_vars:
+
+sources:
+  - src
+
+includes:
+  - include
+  - esp32-arduino
+
+filesystem:
+  - fs
+
+config_schema:
+
+libs:
+  # - origin: https://github.com/mongoose-os-libs/arduino-spi
+
+build_vars:
+  ESP_IDF_EXTRA_COMPONENTS: "${build_vars.ESP_IDF_EXTRA_COMPONENTS} fatfs wear_levelling sdmmc"
+
+tags:
+  - c
+  - js
+  - hw
+manifest_version: 2017-09-29

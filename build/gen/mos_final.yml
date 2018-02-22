@@ -1,0 +1,35 @@
+type: lib
+version: "1.0"
+platform: esp32
+platforms:
+- cc3200
+- cc3220
+- esp32
+- esp8266
+- pic32
+- stm32
+author: Brian Couchman
+description: SD card reader
+sources:
+- /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/arduino-sd/src/mgos_arduino_sd_c.c
+- /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/arduino-sd/src/sd_diskio_crc.c
+- /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/arduino-sd/src/FS.cpp
+- /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/arduino-sd/src/SD.cpp
+- /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/arduino-sd/src/SPI.cpp
+- /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/arduino-sd/src/mgos_arduino_sd.cpp
+- /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/arduino-sd/src/sd_diskio.cpp
+- /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/arduino-sd/src/vfs_api.cpp
+includes:
+- /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/arduino-sd/include
+- /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/arduino-sd/esp32-arduino
+build_vars:
+  ESP_IDF_EXTRA_COMPONENTS: ' fatfs wear_levelling sdmmc'
+  ESP_IDF_SDKCONFIG_OPTS: ""
+tags:
+- c
+- js
+- hw
+libs_version: "1.26"
+modules_version: "1.26"
+mongoose_os_version: "1.26"
+manifest_version: 2017-09-29
