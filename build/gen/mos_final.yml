@@ -7,6 +7,20 @@ platforms:
 author: Brian Couchman
 description: SD card reader
 sources:
+- /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/arduino-sd/src/esp32-hal-adc.c
+- /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/arduino-sd/src/esp32-hal-bt.c
+- /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/arduino-sd/src/esp32-hal-dac.c
+- /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/arduino-sd/src/esp32-hal-gpio.c
+- /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/arduino-sd/src/esp32-hal-i2c.c
+- /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/arduino-sd/src/esp32-hal-ledc.c
+- /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/arduino-sd/src/esp32-hal-matrix.c
+- /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/arduino-sd/src/esp32-hal-misc.c
+- /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/arduino-sd/src/esp32-hal-sigmadelta.c
+- /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/arduino-sd/src/esp32-hal-spi.c
+- /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/arduino-sd/src/esp32-hal-time.c
+- /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/arduino-sd/src/esp32-hal-timer.c
+- /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/arduino-sd/src/esp32-hal-touch.c
+- /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/arduino-sd/src/esp32-hal-uart.c
 - /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/arduino-sd/src/mgos_arduino_sd_c.c
 - /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/arduino-sd/src/sd_diskio_crc.c
 - /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/arduino-sd/src/FS.cpp
