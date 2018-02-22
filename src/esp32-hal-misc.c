@@ -39,46 +39,46 @@ void yield()
 
 portMUX_TYPE microsMux = portMUX_INITIALIZER_UNLOCKED;
 
-unsigned long IRAM_ATTR micros()
-{
-    static unsigned long lccount = 0;
-    static unsigned long overflow = 0;
-    unsigned long ccount;
-    portENTER_CRITICAL_ISR(&microsMux);
-    __asm__ __volatile__ ( "rsr     %0, ccount" : "=a" (ccount) );
-    if(ccount < lccount){
-        overflow += UINT32_MAX / CONFIG_ESP32_DEFAULT_CPU_FREQ_MHZ;
-    }
-    lccount = ccount;
-    portEXIT_CRITICAL_ISR(&microsMux);
-    return overflow + (ccount / CONFIG_ESP32_DEFAULT_CPU_FREQ_MHZ);
-}
-
-unsigned long IRAM_ATTR millis()
-{
-    return xTaskGetTickCount() * portTICK_PERIOD_MS;
-}
-
-void delay(uint32_t ms)
-{
-    vTaskDelay(ms / portTICK_PERIOD_MS);
-}
-
-void IRAM_ATTR delayMicroseconds(uint32_t us)
-{
-    uint32_t m = micros();
-    if(us){
-        uint32_t e = (m + us);
-        if(m > e){ //overflow
-            while(micros() > e){
-                NOP();
-            }
-        }
-        while(micros() < e){
-            NOP();
-        }
-    }
-}
+// unsigned long IRAM_ATTR micros()
+// {
+//     static unsigned long lccount = 0;
+//     static unsigned long overflow = 0;
+//     unsigned long ccount;
+//     portENTER_CRITICAL_ISR(&microsMux);
+//     __asm__ __volatile__ ( "rsr     %0, ccount" : "=a" (ccount) );
+//     if(ccount < lccount){
+//         overflow += UINT32_MAX / CONFIG_ESP32_DEFAULT_CPU_FREQ_MHZ;
+//     }
+//     lccount = ccount;
+//     portEXIT_CRITICAL_ISR(&microsMux);
+//     return overflow + (ccount / CONFIG_ESP32_DEFAULT_CPU_FREQ_MHZ);
+// }
+//
+// unsigned long IRAM_ATTR millis()
+// {
+//     return xTaskGetTickCount() * portTICK_PERIOD_MS;
+// }
+//
+// void delay(uint32_t ms)
+// {
+//     vTaskDelay(ms / portTICK_PERIOD_MS);
+// }
+//
+// void IRAM_ATTR delayMicroseconds(uint32_t us)
+// {
+//     uint32_t m = micros();
+//     if(us){
+//         uint32_t e = (m + us);
+//         if(m > e){ //overflow
+//             while(micros() > e){
+//                 NOP();
+//             }
+//         }
+//         while(micros() < e){
+//             NOP();
+//         }
+//     }
+// }
 
 void initVariant() __attribute__((weak));
 void initVariant() {}
@@ -123,4 +123,3 @@ const char * IRAM_ATTR pathToFileName(const char * path)
     }
     return path+pos;
 }
-
