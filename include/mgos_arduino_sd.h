@@ -35,7 +35,7 @@ int mgos_arduino_sd_read(File *f, uint8_t* buffer, size_t toRead);
 
 // int mgos_arduino_sd_write(FILE *f, int* buffer);
 //
-// void mgos_arduino_sd_listFiles(SD *sd);
+void mgos_arduino_sd_listFiles();
 
 #ifdef __cplusplus
 }

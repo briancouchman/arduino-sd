@@ -56,7 +56,36 @@ int mgos_arduino_sd_read(File f, uint8_t* buffer, size_t toRead) {
 //   return sd->write(f, buffer);
 // }
 
-// void mgos_arduino_sd_listFiles() {
-//   if (sd == nullptr) return;
-//   sd->listFiles();
-// }
+void mgos_arduino_sd_listFiles() {
+  const char * dirname="/";
+  uint8_t levels = 0
+
+  printf("Listing directory: %s\n", dirname);
+
+  File root = fs.open(dirname);
+  if(!root){
+      println("Failed to open directory");
+      return;
+  }
+  if(!root.isDirectory()){
+      println("Not a directory");
+      return;
+  }
+
+  File file = root.openNextFile();
+  while(file){
+      if(file.isDirectory()){
+          print("  DIR : ");
+          println(file.name());
+          if(levels){
+              listDir(fs, file.name(), levels -1);
+          }
+      } else {
+          print("  FILE: ");
+          print(file.name());
+          print("  SIZE: ");
+          println(file.size());
+      }
+      file = root.openNextFile();
+  }
+}
