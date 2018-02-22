@@ -17,7 +17,7 @@ void mgos_arduino_sd_close();
 //
 // void mgos_arduino_sd_init(SD *sd);
 
-void mgos_arduino_sd_begin();
+bool mgos_arduino_sd_begin();
 
 File mgos_arduino_sd_openFile(const char *filename);
 

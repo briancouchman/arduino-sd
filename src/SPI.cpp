@@ -1,9 +1,9 @@
-/* 
+/*
  SPI.cpp - SPI library for esp8266
 
  Copyright (c) 2015 Hristo Gochkov. All rights reserved.
  This file is part of the esp8266 core for Arduino environment.
- 
+
  This library is free software; you can redistribute it and/or
  modify it under the terms of the GNU Lesser General Public
  License as published by the Free Software Foundation; either
@@ -20,6 +20,7 @@
  */
 
 #include "SPI.h"
+#include "Print.h"
 
 SPIClass::SPIClass(uint8_t spi_bus)
     :_spi_num(spi_bus)
@@ -58,6 +59,7 @@ void SPIClass::begin(int8_t sck, int8_t miso, int8_t mosi, int8_t ss)
     spiAttachMISO(_spi, _miso);
     spiAttachMOSI(_spi, _mosi);
 
+    printf("Setup SPI. miso %d mosi %d clk %d ss %d", miso, mosi, sck, ss);
 }
 
 void SPIClass::end()

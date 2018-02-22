@@ -716,6 +716,9 @@ bool sdcard_mount(uint8_t pdrv, const char* path)
 {
     ardu_sdcard_t * card = s_cards[pdrv];
     if(pdrv >= FF_VOLUMES || card == NULL){
+        printf("pdrv >= FF_VOLUMES error %d\n", FF_VOLUMES);
+        printf("card %d \n", pdrv);
+        printf("card==null %d \n", card == NULL);
         return false;
     }
 
@@ -728,15 +731,18 @@ bool sdcard_mount(uint8_t pdrv, const char* path)
     char drv[3] = {(char)('0' + pdrv), ':', 0};
     esp_err_t err = esp_vfs_fat_register(path, drv, 5, &fs);
     if (err == ESP_ERR_INVALID_STATE) {
+        printf("esp_vfs_fat_register failed 0x(%x): SD is registered.", err);
         log_e("esp_vfs_fat_register failed 0x(%x): SD is registered.", err);
         return false;
     } else if (err != ESP_OK) {
+        printf("esp_vfs_fat_register failed 0x(%x)", err);
         log_e("esp_vfs_fat_register failed 0x(%x)", err);
         return false;
     }
 
     FRESULT res = f_mount(fs, drv, 1);
     if (res != FR_OK) {
+        printf("f_mount failed 0x(%x)", res);
         log_e("f_mount failed 0x(%x)", res);
         esp_vfs_fat_unregister_path(path);
         return false;

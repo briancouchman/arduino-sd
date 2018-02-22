@@ -1,7 +1,7 @@
 #include "mgos_arduino_sd.h"
 
-void mgos_arduino_sd_begin() {
-  SD.begin();
+bool mgos_arduino_sd_begin() {
+  return SD.begin();
 }
 
 void mgos_arduino_sd_close() {

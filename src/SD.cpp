@@ -24,23 +24,30 @@ SDFS::SDFS(FSImplPtr impl): FS(impl), _pdrv(0xFF) {}
 
 bool SDFS::begin(uint8_t ssPin, SPIClass &spi, uint32_t frequency, const char * mountpoint)
 {
+    printf("SDFS::begin\n");
     if(_pdrv != 0xFF) {
         return true;
     }
 
+    printf("  spi.begin()\n");
     spi.begin();
 
+    printf("  sdcard_init() %d\n", frequency);
     _pdrv = sdcard_init(ssPin, &spi, frequency);
     if(_pdrv == 0xFF) {
+        printf("error\n");
         return false;
     }
 
+    printf("  sdcard_mount() %04x\n", _pdrv);
     if(!sdcard_mount(_pdrv, mountpoint)){
         sdcard_uninit(_pdrv);
         _pdrv = 0xFF;
+        printf("error\n");
         return false;
     }
 
+    printf("  mountpoint()\n");
     _impl->mountpoint(mountpoint);
     return true;
 }
