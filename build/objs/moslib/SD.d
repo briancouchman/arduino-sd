@@ -2,18 +2,41 @@ SD.o: \
  /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/arduino-sd/src/SD.cpp \
  /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/arduino-sd/include/vfs_api.h \
  /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/arduino-sd/include/FS.h \
- /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/arduino-sd/esp32-arduino/Arduino.h \
- /opt/Espressif/esp-idf/components/newlib/include/stdio.h \
- /opt/Espressif/esp-idf/components/newlib/include/sys/stdio.h \
+ /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/arduino-sd/deps/arduino-compat/include/Arduino.h \
  /opt/Espressif/esp-idf/components/newlib/include/stdlib.h \
  /opt/Espressif/esp-idf/components/newlib/include/machine/stdlib.h \
  /opt/Espressif/esp-idf/components/newlib/include/alloca.h \
+ /opt/Espressif/esp-idf/components/newlib/include/stdio.h \
+ /opt/Espressif/esp-idf/components/newlib/include/sys/stdio.h \
  /opt/Espressif/esp-idf/components/newlib/include/string.h \
  /opt/Espressif/esp-idf/components/newlib/include/sys/string.h \
+ /opt/Espressif/esp-idf/components/newlib/include/math.h \
+ /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/arduino-sd/include/Stream.h \
  /opt/Espressif/esp-idf/components/newlib/include/inttypes.h \
+ /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/arduino-sd/deps/arduino-compat/include/Print.h \
+ /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/arduino-sd/deps/arduino-compat/include/WString.h \
+ /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/arduino-sd/deps/arduino-compat/include/pgmspace.h \
+ /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/arduino-sd/deps/arduino-compat/include/Printable.h \
+ /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/arduino-sd/deps/arduino-compat/include/WString.h \
+ /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/arduino-sd/include/FSImpl.h \
+ /opt/Espressif/esp-idf/components/newlib/include/sys/stat.h \
+ /opt/Espressif/esp-idf/components/newlib/include/dirent.h \
+ /opt/Espressif/esp-idf/components/vfs/include/sys/dirent.h \
+ /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/arduino-sd/include/sd_diskio.h \
+ /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/arduino-sd/include/SPI.h \
+ /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/arduino-sd/include/pins_arduino.h \
+ /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/arduino-sd/include/esp32-hal-spi.h \
+ /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/arduino-sd/include/sd_defines.h \
+ /opt/Espressif/esp-idf/components/fatfs/src/ff.h \
+ /opt/Espressif/esp-idf/components/fatfs/src/integer.h \
+ /opt/Espressif/esp-idf/components/fatfs/src/ffconf.h \
+ /opt/Espressif/esp-idf/components/newlib/include/sys/param.h \
+ /opt/Espressif/esp-idf/components/newlib/include/sys/syslimits.h \
+ /opt/Espressif/esp-idf/components/newlib/include/machine/endian.h \
+ /opt/Espressif/esp-idf/components/newlib/include/machine/param.h \
+ /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/arduino-sd/build/objs/include/sdkconfig.h \
  /opt/Espressif/esp-idf/components/freertos/include/freertos/FreeRTOS.h \
  /opt/Espressif/esp-idf/components/freertos/include/freertos/FreeRTOSConfig.h \
- /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/arduino-sd/build/objs/include/sdkconfig.h \
  /opt/Espressif/esp-idf/components/freertos/include/freertos/xtensa_config.h \
  /opt/Espressif/esp-idf/components/esp32/include/xtensa/hal.h \
  /opt/Espressif/esp-idf/components/esp32/include/xtensa/config/core.h \
@@ -63,62 +86,8 @@ SD.o: \
  /opt/Espressif/esp-idf/components/esp32/include/rom/ets_sys.h \
  /opt/Espressif/esp-idf/components/freertos/include/freertos/xtensa_api.h \
  /opt/Espressif/esp-idf/components/soc/esp32/include/soc/touch_channel.h \
- /opt/Espressif/esp-idf/components/freertos/include/freertos/task.h \
- /opt/Espressif/esp-idf/components/newlib/include/limits.h \
- /opt/Espressif/esp-idf/components/freertos/include/freertos/list.h \
  /opt/Espressif/esp-idf/components/freertos/include/freertos/semphr.h \
  /opt/Espressif/esp-idf/components/freertos/include/freertos/queue.h \
- /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/arduino-sd/esp32-arduino/esp32-hal.h \
- /opt/Espressif/esp-idf/components/newlib/include/math.h \
- /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/arduino-sd/esp32-arduino/esp32-hal-log.h \
- /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/arduino-sd/esp32-arduino/esp32-hal-matrix.h \
- /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/arduino-sd/esp32-arduino/esp32-hal-uart.h \
- /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/arduino-sd/esp32-arduino/esp32-hal-gpio.h \
- /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/arduino-sd/esp32-arduino/esp32-hal-touch.h \
- /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/arduino-sd/esp32-arduino/esp32-hal-dac.h \
- /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/arduino-sd/esp32-arduino/esp32-hal-adc.h \
- /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/arduino-sd/esp32-arduino/esp32-hal-spi.h \
- /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/arduino-sd/esp32-arduino/esp32-hal-i2c.h \
- /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/arduino-sd/esp32-arduino/esp32-hal-ledc.h \
- /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/arduino-sd/esp32-arduino/esp32-hal-sigmadelta.h \
- /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/arduino-sd/esp32-arduino/esp32-hal-timer.h \
- /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/arduino-sd/esp32-arduino/esp32-hal-bt.h \
- /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/arduino-sd/esp32-arduino/esp8266-compat.h \
- /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/arduino-sd/esp32-arduino/stdlib_noniso.h \
- /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/arduino-sd/esp32-arduino/binary.h \
- /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/arduino-sd/esp32-arduino/WCharacter.h \
- /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/arduino-sd/esp32-arduino/WString.h \
- /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/arduino-sd/esp32-arduino/pgmspace.h \
- /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/arduino-sd/esp32-arduino/Stream.h \
- /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/arduino-sd/esp32-arduino/Print.h \
- /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/arduino-sd/esp32-arduino/Printable.h \
- /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/arduino-sd/esp32-arduino/IPAddress.h \
- /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/arduino-sd/esp32-arduino/WString.h \
- /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/arduino-sd/esp32-arduino/Printable.h \
- /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/arduino-sd/esp32-arduino/Client.h \
- /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/arduino-sd/esp32-arduino/Server.h \
- /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/arduino-sd/esp32-arduino/Udp.h \
- /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/arduino-sd/esp32-arduino/Stream.h \
- /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/arduino-sd/esp32-arduino/IPAddress.h \
- /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/arduino-sd/esp32-arduino/HardwareSerial.h \
- /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/arduino-sd/esp32-arduino/Esp.h \
- /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/arduino-sd/esp32-arduino/pins_arduino.h \
- /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/arduino-sd/include/FSImpl.h \
- /opt/Espressif/esp-idf/components/newlib/include/sys/stat.h \
- /opt/Espressif/esp-idf/components/newlib/include/dirent.h \
- /opt/Espressif/esp-idf/components/vfs/include/sys/dirent.h \
- /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/arduino-sd/include/sd_diskio.h \
- /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/arduino-sd/include/SPI.h \
- /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/arduino-sd/esp32-arduino/pins_arduino.h \
- /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/arduino-sd/esp32-arduino/esp32-hal-spi.h \
- /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/arduino-sd/include/sd_defines.h \
- /opt/Espressif/esp-idf/components/fatfs/src/ff.h \
- /opt/Espressif/esp-idf/components/fatfs/src/integer.h \
- /opt/Espressif/esp-idf/components/fatfs/src/ffconf.h \
- /opt/Espressif/esp-idf/components/newlib/include/sys/param.h \
- /opt/Espressif/esp-idf/components/newlib/include/sys/syslimits.h \
- /opt/Espressif/esp-idf/components/newlib/include/machine/endian.h \
- /opt/Espressif/esp-idf/components/newlib/include/machine/param.h \
  /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/arduino-sd/include/FS.h \
  /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/arduino-sd/include/SD.h
 
@@ -126,11 +95,7 @@ SD.o: \
 
 /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/arduino-sd/include/FS.h:
 
-/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/arduino-sd/esp32-arduino/Arduino.h:
-
-/opt/Espressif/esp-idf/components/newlib/include/stdio.h:
-
-/opt/Espressif/esp-idf/components/newlib/include/sys/stdio.h:
+/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/arduino-sd/deps/arduino-compat/include/Arduino.h:
 
 /opt/Espressif/esp-idf/components/newlib/include/stdlib.h:
 
@@ -138,17 +103,67 @@ SD.o: \
 
 /opt/Espressif/esp-idf/components/newlib/include/alloca.h:
 
+/opt/Espressif/esp-idf/components/newlib/include/stdio.h:
+
+/opt/Espressif/esp-idf/components/newlib/include/sys/stdio.h:
+
 /opt/Espressif/esp-idf/components/newlib/include/string.h:
 
 /opt/Espressif/esp-idf/components/newlib/include/sys/string.h:
 
+/opt/Espressif/esp-idf/components/newlib/include/math.h:
+
+/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/arduino-sd/include/Stream.h:
+
 /opt/Espressif/esp-idf/components/newlib/include/inttypes.h:
+
+/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/arduino-sd/deps/arduino-compat/include/Print.h:
+
+/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/arduino-sd/deps/arduino-compat/include/WString.h:
+
+/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/arduino-sd/deps/arduino-compat/include/pgmspace.h:
+
+/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/arduino-sd/deps/arduino-compat/include/Printable.h:
+
+/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/arduino-sd/deps/arduino-compat/include/WString.h:
+
+/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/arduino-sd/include/FSImpl.h:
+
+/opt/Espressif/esp-idf/components/newlib/include/sys/stat.h:
+
+/opt/Espressif/esp-idf/components/newlib/include/dirent.h:
+
+/opt/Espressif/esp-idf/components/vfs/include/sys/dirent.h:
+
+/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/arduino-sd/include/sd_diskio.h:
+
+/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/arduino-sd/include/SPI.h:
+
+/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/arduino-sd/include/pins_arduino.h:
+
+/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/arduino-sd/include/esp32-hal-spi.h:
+
+/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/arduino-sd/include/sd_defines.h:
+
+/opt/Espressif/esp-idf/components/fatfs/src/ff.h:
+
+/opt/Espressif/esp-idf/components/fatfs/src/integer.h:
+
+/opt/Espressif/esp-idf/components/fatfs/src/ffconf.h:
+
+/opt/Espressif/esp-idf/components/newlib/include/sys/param.h:
+
+/opt/Espressif/esp-idf/components/newlib/include/sys/syslimits.h:
+
+/opt/Espressif/esp-idf/components/newlib/include/machine/endian.h:
+
+/opt/Espressif/esp-idf/components/newlib/include/machine/param.h:
+
+/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/arduino-sd/build/objs/include/sdkconfig.h:
 
 /opt/Espressif/esp-idf/components/freertos/include/freertos/FreeRTOS.h:
 
 /opt/Espressif/esp-idf/components/freertos/include/freertos/FreeRTOSConfig.h:
-
-/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/arduino-sd/build/objs/include/sdkconfig.h:
 
 /opt/Espressif/esp-idf/components/freertos/include/freertos/xtensa_config.h:
 
@@ -248,117 +263,9 @@ SD.o: \
 
 /opt/Espressif/esp-idf/components/soc/esp32/include/soc/touch_channel.h:
 
-/opt/Espressif/esp-idf/components/freertos/include/freertos/task.h:
-
-/opt/Espressif/esp-idf/components/newlib/include/limits.h:
-
-/opt/Espressif/esp-idf/components/freertos/include/freertos/list.h:
-
 /opt/Espressif/esp-idf/components/freertos/include/freertos/semphr.h:
 
 /opt/Espressif/esp-idf/components/freertos/include/freertos/queue.h:
-
-/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/arduino-sd/esp32-arduino/esp32-hal.h:
-
-/opt/Espressif/esp-idf/components/newlib/include/math.h:
-
-/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/arduino-sd/esp32-arduino/esp32-hal-log.h:
-
-/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/arduino-sd/esp32-arduino/esp32-hal-matrix.h:
-
-/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/arduino-sd/esp32-arduino/esp32-hal-uart.h:
-
-/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/arduino-sd/esp32-arduino/esp32-hal-gpio.h:
-
-/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/arduino-sd/esp32-arduino/esp32-hal-touch.h:
-
-/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/arduino-sd/esp32-arduino/esp32-hal-dac.h:
-
-/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/arduino-sd/esp32-arduino/esp32-hal-adc.h:
-
-/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/arduino-sd/esp32-arduino/esp32-hal-spi.h:
-
-/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/arduino-sd/esp32-arduino/esp32-hal-i2c.h:
-
-/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/arduino-sd/esp32-arduino/esp32-hal-ledc.h:
-
-/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/arduino-sd/esp32-arduino/esp32-hal-sigmadelta.h:
-
-/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/arduino-sd/esp32-arduino/esp32-hal-timer.h:
-
-/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/arduino-sd/esp32-arduino/esp32-hal-bt.h:
-
-/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/arduino-sd/esp32-arduino/esp8266-compat.h:
-
-/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/arduino-sd/esp32-arduino/stdlib_noniso.h:
-
-/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/arduino-sd/esp32-arduino/binary.h:
-
-/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/arduino-sd/esp32-arduino/WCharacter.h:
-
-/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/arduino-sd/esp32-arduino/WString.h:
-
-/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/arduino-sd/esp32-arduino/pgmspace.h:
-
-/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/arduino-sd/esp32-arduino/Stream.h:
-
-/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/arduino-sd/esp32-arduino/Print.h:
-
-/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/arduino-sd/esp32-arduino/Printable.h:
-
-/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/arduino-sd/esp32-arduino/IPAddress.h:
-
-/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/arduino-sd/esp32-arduino/WString.h:
-
-/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/arduino-sd/esp32-arduino/Printable.h:
-
-/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/arduino-sd/esp32-arduino/Client.h:
-
-/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/arduino-sd/esp32-arduino/Server.h:
-
-/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/arduino-sd/esp32-arduino/Udp.h:
-
-/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/arduino-sd/esp32-arduino/Stream.h:
-
-/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/arduino-sd/esp32-arduino/IPAddress.h:
-
-/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/arduino-sd/esp32-arduino/HardwareSerial.h:
-
-/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/arduino-sd/esp32-arduino/Esp.h:
-
-/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/arduino-sd/esp32-arduino/pins_arduino.h:
-
-/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/arduino-sd/include/FSImpl.h:
-
-/opt/Espressif/esp-idf/components/newlib/include/sys/stat.h:
-
-/opt/Espressif/esp-idf/components/newlib/include/dirent.h:
-
-/opt/Espressif/esp-idf/components/vfs/include/sys/dirent.h:
-
-/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/arduino-sd/include/sd_diskio.h:
-
-/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/arduino-sd/include/SPI.h:
-
-/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/arduino-sd/esp32-arduino/pins_arduino.h:
-
-/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/arduino-sd/esp32-arduino/esp32-hal-spi.h:
-
-/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/arduino-sd/include/sd_defines.h:
-
-/opt/Espressif/esp-idf/components/fatfs/src/ff.h:
-
-/opt/Espressif/esp-idf/components/fatfs/src/integer.h:
-
-/opt/Espressif/esp-idf/components/fatfs/src/ffconf.h:
-
-/opt/Espressif/esp-idf/components/newlib/include/sys/param.h:
-
-/opt/Espressif/esp-idf/components/newlib/include/sys/syslimits.h:
-
-/opt/Espressif/esp-idf/components/newlib/include/machine/endian.h:
-
-/opt/Espressif/esp-idf/components/newlib/include/machine/param.h:
 
 /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/arduino-sd/include/FS.h:
 

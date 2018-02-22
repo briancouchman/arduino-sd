@@ -11,7 +11,7 @@ sources:
 
 includes:
   - include
-  - esp32-arduino
+  # - arduino-inc
 
 filesystem:
   - fs
@@ -20,9 +20,10 @@ config_schema:
 
 libs:
   # - origin: https://github.com/mongoose-os-libs/arduino-spi
+  - origin: https://github.com/mongoose-os-libs/arduino-compat
 
 build_vars:
-  ESP_IDF_EXTRA_COMPONENTS: "${build_vars.ESP_IDF_EXTRA_COMPONENTS} fatfs wear_levelling sdmmc"
+  ESP_IDF_EXTRA_COMPONENTS: "${build_vars.ESP_IDF_EXTRA_COMPONENTS} fatfs wear_levelling sdmmc soc"
 
 tags:
   - c

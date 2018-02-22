@@ -18,6 +18,7 @@ extern "C" {
     #include "ff.h"
     #include "esp_vfs.h"
     #include "esp_vfs_fat.h"
+    #include "esp32-hal-log.h"
     char CRC7(const char* data, int length);
     unsigned short CRC16(const char* data, int length);
 }

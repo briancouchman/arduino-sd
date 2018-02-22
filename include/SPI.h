@@ -25,6 +25,10 @@
 #include "pins_arduino.h"
 #include "esp32-hal-spi.h"
 
+//Missing in arduino-compat library from Mongoose, adding it here
+#define LSBFIRST 0
+#define MSBFIRST 1
+
 class SPISettings
 {
 public:

@@ -23,6 +23,8 @@
 
 #include <memory>
 #include <Arduino.h>
+#include "Stream.h"
+#include "WString.h"
 
 namespace fs
 {
@@ -44,8 +46,7 @@ enum SeekMode {
     SeekEnd = 2
 };
 
-class File : public Stream
-{
+class File : public Stream{
 public:
     File(FileImplPtr p = FileImplPtr()) : _p(p) {}
 

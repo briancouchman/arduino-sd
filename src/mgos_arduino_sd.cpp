@@ -1,5 +1,4 @@
 #include "mgos_arduino_sd.h"
-#include "SPI.h"
 
 void mgos_arduino_sd_begin() {
   SD.begin();

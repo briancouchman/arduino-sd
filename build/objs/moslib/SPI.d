@@ -17,10 +17,10 @@ SPI.o: \
  /opt/Espressif/esp-idf/components/newlib/include/sys/cdefs.h \
  /opt/Espressif/esp-idf/components/newlib/include/machine/stdlib.h \
  /opt/Espressif/esp-idf/components/newlib/include/alloca.h \
- /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/arduino-sd/esp32-arduino/pins_arduino.h \
+ /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/arduino-sd/include/pins_arduino.h \
  /opt/Espressif/esp-idf/components/newlib/include/stdint.h \
  /opt/Espressif/esp-idf/components/newlib/include/sys/_intsup.h \
- /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/arduino-sd/esp32-arduino/esp32-hal-spi.h
+ /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/arduino-sd/include/esp32-hal-spi.h
 
 /Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/arduino-sd/include/SPI.h:
 
@@ -56,10 +56,10 @@ SPI.o: \
 
 /opt/Espressif/esp-idf/components/newlib/include/alloca.h:
 
-/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/arduino-sd/esp32-arduino/pins_arduino.h:
+/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/arduino-sd/include/pins_arduino.h:
 
 /opt/Espressif/esp-idf/components/newlib/include/stdint.h:
 
 /opt/Espressif/esp-idf/components/newlib/include/sys/_intsup.h:
 
-/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/arduino-sd/esp32-arduino/esp32-hal-spi.h:
+/Users/bcouchman/Documents/Perso/projects/meeio/electronics/mongooseos/libs/arduino-sd/include/esp32-hal-spi.h:
